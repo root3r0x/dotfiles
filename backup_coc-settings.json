@@ -1,0 +1,10 @@
+" Press ? for help
+
+.. (up a dir)
+</ledes/AppData/local/nvim/
++ [  ]lua/
++ [  ]plugins/
++ [  ]themes/
+  [  ]coc-settings.json
+  [  ]init.vim
+  [  ]README.md

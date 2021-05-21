@@ -102,8 +102,17 @@ nmap <leader>bd :bdelete<CR>
 set cmdheight=1
 "let g:tokyonight_style = 'night' " available: night, storm
 "let g:tokyonight_enable_italic = 0
-colorscheme srcery
-let g:airline_theme='base16_google'
+
+//Segun la hora cambia el tema cuando se inicia vim.
+if strftime('%H') >= 7 && strftime('%H') < 19
+   set background=light
+   colorscheme xcodelight
+else
+   set background=dark
+   colorscheme xcodewwdc
+endif
+
+let g:airline_theme='xcodewwdc'
 
 "Close tags automatically
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.js'
