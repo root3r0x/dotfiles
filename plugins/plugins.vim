@@ -20,6 +20,10 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'   }
 Plug 'https://github.com/root3r0x/vim-epub'
 Plug 'sotte/presenting.vim'
 Plug 'ap/vim-css-color'
+
+Plug 'nightsense/cosmic_latte'
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'arzg/vim-colors-xcode'
 "Config
 " :PresentingStart
 " Key  Action
