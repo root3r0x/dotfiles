@@ -73,6 +73,5 @@ Plug 'junegunn/gv.vim'
 "Smooth Scrolling
 Plug 'psliwka/vim-smoothie'
 
-
 "_____________________________
 call plug#end()

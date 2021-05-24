@@ -47,6 +47,12 @@ xnoremap J :move '>+1<CR>gv-gv
 vnoremap < <gv
 vnoremap > >gv
 
+"Mover lineas con shit
+nnoremap <s-up> :m-2<cr>
+nnoremap <s-down> :m+<cr>
+inoremap <s-up> <esc>:m-2<cr>
+inoremap <s-down> <esc>:m+<cr>
+
 "-------------------------------Sources-------------------------------
 source ~/AppData/Local/nvim/plugins/plugins.vim
 source ~/AppData/Local/nvim/plugins/plug-config.vim
@@ -103,7 +109,7 @@ set cmdheight=1
 "let g:tokyonight_style = 'night' " available: night, storm
 "let g:tokyonight_enable_italic = 0
 
-//Segun la hora cambia el tema cuando se inicia vim.
+"Segun la hora cambia el tema cuando se inicia vim.
 if strftime('%H') >= 7 && strftime('%H') < 19
    set background=light
    colorscheme xcodelight
