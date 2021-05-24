@@ -1,5 +1,6 @@
+# READE :) 
 
-![Alt text](https://github.com/root3r0x/dotfiles/blob/master/doc/logo_github.png "root3r0x")
+![Alt text](https://github.com/root3r0x/dotfiles/master/doc/logo_github.png "root3r0x")
 
 ==============================================================================
 
