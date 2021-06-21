@@ -17,3 +17,7 @@ LOADING...██████████████]99%
 - Colorscheme
 
 ![image text](https://github.com/root3r0x/dotfiles/blob/master/screenshots/screenshot_1.png "Colorscheme")
+
+- Coc Java 
+
+![image text](https://github.com/root3r0x/dotfiles/blob/master/screenshots/scanner.gif "Java Language")
