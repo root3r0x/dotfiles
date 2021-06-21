@@ -12,3 +12,7 @@ FOR BETTER EXPERIENCE USE WINDOWS TERMINAL ON WINDOWS SYSTEMS, PACKAGE MANAGER
 
 LOADING...██████████████]99%
 
+### Screeshots
+
+- Colorscheme
+   ![image text](https://github.com/root3r0x/dotfiles/screenshots/blob/master/screenshot_1.png "Colorscheme")

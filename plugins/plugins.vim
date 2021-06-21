@@ -13,17 +13,17 @@ Plug 'roosta/srcery'
 Plug 'https://github.com/kyoz/purify'
 Plug 'dracula/vim', { 'as': 'dracula'  }
 Plug 'ayu-theme/ayu-vim'
+Plug 'machakann/vim-highlightedyank'
+Plug 'nightsense/cosmic_latte'
+Plug 'arzg/vim-colors-xcode'
+Plug 'rafi/awesome-vim-colorschemes'
+
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-Plug 'machakann/vim-highlightedyank'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'   }
-Plug 'https://github.com/root3r0x/vim-epub'
 Plug 'sotte/presenting.vim'
 Plug 'ap/vim-css-color'
-
-Plug 'nightsense/cosmic_latte'
-Plug 'rafi/awesome-vim-colorschemes'
-Plug 'arzg/vim-colors-xcode'
+Plug 'https://github.com/root3r0x/vim-epub'
 "Config
 " :PresentingStart
 " Key  Action

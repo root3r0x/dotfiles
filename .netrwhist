@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='C:\cygwin64\home\ledes'
 let g:netrw_dirhist_5='C:\Users\ledes\AppData\Local\nvim'
 let g:netrw_dirhist_4='C:/Users/ledes/AppData/Local/nvim'
 let g:netrw_dirhist_3='C:/Users/ledes/AppData/Local/nvim/themes'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_0='C:/$AV_ASW/$VAULT'
 let g:netrw_dirhist_9='C:/$AV_ASW'
 let g:netrw_dirhist_8='C:/$AV_ASW/$VAULT'
 let g:netrw_dirhist_7='C:/$AV_ASW'
-let g:netrw_dirhist_6='C:/$AV_ASW/$VAULT'
