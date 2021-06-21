@@ -16,4 +16,4 @@ LOADING...██████████████]99%
 
 - Colorscheme
 
-![image text](https://github.com/root3r0x/dotfiles/blob/master/screenshots/screenshot_1.png Colorscheme")
+![image text](https://github.com/root3r0x/dotfiles/blob/master/screenshots/screenshot_1.png "Colorscheme")
