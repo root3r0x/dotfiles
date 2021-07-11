@@ -58,7 +58,24 @@ source ~/AppData/Local/nvim/plugins/plugins.vim
 source ~/AppData/Local/nvim/plugins/plug-config.vim
 source ~/AppData/Local/nvim/Plugins/md_preview-config.vim
 source ~/AppData/Local/nvim/themes/onedark.vim
-"--------------------------------Plugins Config--------------------------------------------
+
+"-- Languaje Spell config --> URL Files= http://ftp.vim.org/vim/runtime/spell/ 
+"
+" ]s  Siguiente falta ortográfica
+" [s  Anterior falta ortográfica
+" z=  Mostrar sugerencias para una palabra incorrecta.
+" zg  Añadir una palabra al diccionario.
+" zug Deshacer la adición de una palabra al diccionario.
+" zw  Eliminar una palabra del diccionario.
+
+"autocmd! User :set spell Enter :setlocal spell spelllang=es
+"set spell
+set spell spelllang=es
+set spellfile=~/.vim/dict_es.add
+"Colores
+:highlight clear SpellBad
+:highlight SpellBad ctermfg=009 ctermbg=011 guifg=#ff0000 guibg=#ffff00
+"--------------------------------Plugins Config-----------------------
 "save file
 nmap <leader>w :w <CR>
 "cerrar ventana
