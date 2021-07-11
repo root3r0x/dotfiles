@@ -58,8 +58,9 @@ source ~/AppData/Local/nvim/plugins/plugins.vim
 source ~/AppData/Local/nvim/plugins/plug-config.vim
 source ~/AppData/Local/nvim/Plugins/md_preview-config.vim
 source ~/AppData/Local/nvim/themes/onedark.vim
-
-"-- Languaje Spell config --> URL Files= http://ftp.vim.org/vim/runtime/spell/ 
+"------------------- Languaje Spell config----------------------------
+"
+"--> URL Files= http://ftp.vim.org/vim/runtime/spell/ 
 "
 " ]s  Siguiente falta ortográfica
 " [s  Anterior falta ortográfica
