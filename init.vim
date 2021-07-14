@@ -13,6 +13,14 @@
 "⢰⠁⠀⡤⠖⠺⢶⡾⠃⠀⠈⠙⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 "⠈⠓⠾⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 "---------------------------------vim config---------------------------- 
+"
+
+" --> Enlaces simbolicos para utilizar el mismo archivo de configuracion de vim &&
+"nvin.
+"set runtimepath^=~/.vim runtimepath+=~/.vim/after
+"let &packpath=&runtimepath
+"source ~/.vimrc
+
 syntax on 
 set number 
 set mouse=a
@@ -28,6 +36,7 @@ set laststatus=2
 set backspace=2
 set guioptions-=T
 set guioptions-=L
+set numberwidth=1
 
 "Config cursores horizontal-vertical
 set cursorline
@@ -109,6 +118,7 @@ autocmd! User GoyoLeave Limelight!
 
 "open nerdtree
 nmap <Leader>e :NERDTree<CR>
+let NERDTreeQuitOnOpen=1 "Cerrar nerdtree cuando se abre un archivo.
 
 "open cocExplorer 
 "Search for two chars with easymotion
