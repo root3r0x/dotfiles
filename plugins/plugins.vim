@@ -24,6 +24,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'   }
 Plug 'sotte/presenting.vim'
 Plug 'ap/vim-css-color'
 Plug 'https://github.com/root3r0x/vim-epub'
+"Plug 'ojroques/vim-scrollstatus'
 "Config
 " :PresentingStart
 " Key  Action
@@ -72,6 +73,9 @@ Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
 "Smooth Scrolling
 Plug 'psliwka/vim-smoothie'
+
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 "_____________________________
 call plug#end()

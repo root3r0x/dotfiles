@@ -20,7 +20,6 @@
 "set runtimepath^=~/.vim runtimepath+=~/.vim/after
 "let &packpath=&runtimepath
 "source ~/.vimrc
-
 syntax on 
 set number 
 set mouse=a
@@ -69,6 +68,7 @@ source ~/AppData/Local/nvim/Plugins/md_preview-config.vim
 source ~/AppData/Local/nvim/themes/onedark.vim
 "------------------- Languaje Spell config----------------------------
 "
+
 "--> URL Files= http://ftp.vim.org/vim/runtime/spell/ 
 "
 " ]s  Siguiente falta ortográfica
