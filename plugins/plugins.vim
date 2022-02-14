@@ -24,6 +24,15 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'   }
 Plug 'sotte/presenting.vim'
 Plug 'ap/vim-css-color'
 Plug 'https://github.com/root3r0x/vim-epub'
+Plug 'marko-cerovac/material.nvim'
+
+"There are 5 different styles available:
+"    darker
+"    lighter
+"    palenight
+"    deep ocean
+"    oceanic
+
 "Plug 'ojroques/vim-scrollstatus'
 "Config
 " :PresentingStart
@@ -52,6 +61,10 @@ Plug 'OmniSharp/omnisharp-vim'
 "Close pairs () [] {} ''
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
+
+"PlantUml
+Plug 'aklt/plantuml-syntax'
+Plug 'scrooloose/vim-slumlord'
 
 "Plug 'p00f/nvim-ts-rainbow'
 "Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update

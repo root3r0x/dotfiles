@@ -140,10 +140,12 @@ set cmdheight=1
 "Segun la hora cambia el tema cuando se inicia vim.
 if strftime('%H') >= 7 && strftime('%H') < 19
    set background=light
-   colorscheme xcodedark
+   colorscheme material "xcodedark
+   let g:material_style = 'deep ocean'
 else
    set background=dark
-   colorscheme xcodewwdc
+   colorscheme material
+   let g:material_style = 'lighter'
 endif
 
 let g:airline_theme='xcodewwdc'
