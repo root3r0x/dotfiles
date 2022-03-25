@@ -23,8 +23,10 @@ Plug 'junegunn/limelight.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'   }
 Plug 'sotte/presenting.vim'
 Plug 'ap/vim-css-color'
-Plug 'https://github.com/root3r0x/vim-epub'
 Plug 'marko-cerovac/material.nvim'
+Plug 'tpope/vim-rails'
+
+"Plug 'https://github.com/root3r0x/vim-epub'
 
 "There are 5 different styles available:
 "    darker
@@ -89,6 +91,8 @@ Plug 'psliwka/vim-smoothie'
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+
+Plug 'glepnir/dashboard-nvim'
 
 "_____________________________
 call plug#end()

@@ -66,10 +66,10 @@ source ~/AppData/Local/nvim/plugins/plugins.vim
 source ~/AppData/Local/nvim/plugins/plug-config.vim
 source ~/AppData/Local/nvim/Plugins/md_preview-config.vim
 source ~/AppData/Local/nvim/themes/onedark.vim
-"------------------- Languaje Spell config----------------------------
-"
+"source ~/AppData/Local/nvim/plugins/dashboard-config.vim
 
-"--> URL Files= http://ftp.vim.org/vim/runtime/spell/ 
+"------------------- Languaje Spell config----------------------------
+""--> URL Files= http://ftp.vim.org/vim/runtime/spell/ 
 "
 " ]s  Siguiente falta ortográfica
 " [s  Anterior falta ortográfica
@@ -85,6 +85,7 @@ set spellfile=~/.vim/dict_es.add
 "Colores
 :highlight clear SpellBad
 :highlight SpellBad ctermfg=009 ctermbg=011 guifg=#ff0000 guibg=#ffff00
+
 "--------------------------------Plugins Config-----------------------
 "save file
 nmap <leader>w :w <CR>
@@ -139,16 +140,21 @@ set cmdheight=1
 
 "Segun la hora cambia el tema cuando se inicia vim.
 if strftime('%H') >= 7 && strftime('%H') < 19
-   set background=light
-   colorscheme material "xcodedark
+   set background=dark
+   colorscheme happy_hacking   "Tema durante el dia.
    let g:material_style = 'deep ocean'
 else
    set background=dark
-   colorscheme material
-   let g:material_style = 'lighter'
+   colorscheme mountaineer   "Tema durante la noche.
+   "let g:material_style  'lighter'
 endif
 
-let g:airline_theme='xcodewwdc'
+"Tema de la barra.
+if strftime('%H') >= 7 && strftime('%H') < 19
+   let g:airline_theme="hybrid"
+else
+   let g:airline_theme='ayu_dark'
+endif
 
 "Close tags automatically
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.js'
