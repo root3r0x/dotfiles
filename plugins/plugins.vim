@@ -17,15 +17,26 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'nightsense/cosmic_latte'
 Plug 'arzg/vim-colors-xcode'
 Plug 'rafi/awesome-vim-colorschemes'
-
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'   }
-Plug 'sotte/presenting.vim'
 Plug 'ap/vim-css-color'
-Plug 'marko-cerovac/material.nvim'
 Plug 'tpope/vim-rails'
+Plug 'marko-cerovac/material.nvim'
 
+"Para presentaciones:
+" :PresentingStart
+" Key  Action
+"  n    next slide
+"  p    previous slide
+"  q    quit
+Plug 'sotte/presenting.vim'
+
+Plug 'gyim/vim-boxdraw'
+
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'   }
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/goyo.vim'
+
+Plug 'derektata/lorem.nvim'
+Plug 'vim-scripts/loremipsum'
 "Plug 'https://github.com/root3r0x/vim-epub'
 
 "There are 5 different styles available:
@@ -35,15 +46,7 @@ Plug 'tpope/vim-rails'
 "    deep ocean
 "    oceanic
 
-"Plug 'ojroques/vim-scrollstatus'
-"Config
-" :PresentingStart
-" Key  Action
-"  n    next slide
-"  p    previous slide
-"  q    quit
-
-" "IDE
+"IDE
 Plug 'easymotion/vim-easymotion'
 "Navigate with C-h C-l C-j C-k
 "Navegar con C-h C-l C-j C-k
@@ -65,8 +68,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 
 "PlantUml
-Plug 'aklt/plantuml-syntax'
 Plug 'scrooloose/vim-slumlord'
+Plug 'aklt/plantuml-syntax'
 
 "Plug 'p00f/nvim-ts-rainbow'
 "Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
@@ -92,7 +95,7 @@ Plug 'psliwka/vim-smoothie'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
-Plug 'glepnir/dashboard-nvim'
+"Plug 'glepnir/dashboard-nvim'
 
 "_____________________________
 call plug#end()

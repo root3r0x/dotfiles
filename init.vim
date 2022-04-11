@@ -66,8 +66,6 @@ source ~/AppData/Local/nvim/plugins/plugins.vim
 source ~/AppData/Local/nvim/plugins/plug-config.vim
 source ~/AppData/Local/nvim/Plugins/md_preview-config.vim
 source ~/AppData/Local/nvim/themes/onedark.vim
-"source ~/AppData/Local/nvim/plugins/dashboard-config.vim
-
 "------------------- Languaje Spell config----------------------------
 ""--> URL Files= http://ftp.vim.org/vim/runtime/spell/ 
 "
@@ -117,6 +115,14 @@ map <leader>ll :Limelight!!<CR>
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
+" Lopem Ipsum Dolor Config 
+" :Loremimsum 100(ejemplo).
+
+lua <<EOF
+   require'lorem-nvim'.setup()
+EOF
+
+
 "open nerdtree
 nmap <Leader>e :NERDTree<CR>
 let NERDTreeQuitOnOpen=1 "Cerrar nerdtree cuando se abre un archivo.
@@ -145,7 +151,7 @@ if strftime('%H') >= 7 && strftime('%H') < 19
    let g:material_style = 'deep ocean'
 else
    set background=dark
-   colorscheme mountaineer   "Tema durante la noche.
+   colorscheme xcodedarkhc   "Tema durante la noche.
    "let g:material_style  'lighter'
 endif
 
