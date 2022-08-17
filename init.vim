@@ -147,7 +147,7 @@ set cmdheight=1
 "Segun la hora cambia el tema cuando se inicia vim.
 if strftime('%H') >= 7 && strftime('%H') < 19
    set background=dark
-   colorscheme happy_hacking   "Tema durante el dia.
+   colorscheme molokayo "Tema durante el dia.
    let g:material_style = 'deep ocean'
 else
    set background=dark
