@@ -85,6 +85,7 @@ set spellfile=~/.vim/dict_es.add
 :highlight SpellBad ctermfg=009 ctermbg=011 guifg=#ff0000 guibg=#ffff00
 
 "--------------------------------Plugins Config-----------------------
+" <Ctrl - f > <Ctrl - b > Scroll popupbuffer en la documentacion
 "save file
 nmap <leader>w :w <CR>
 "cerrar ventana
@@ -94,7 +95,8 @@ nmap <leader>so :so%<CR>
 "search commands 
 nmap <leader>gs  :CocSearch
 nmap <leader>fs :FZF<CR>
-nmap <leader>rg :Rg<CR>
+nmap <leader>rg gRg<CR>
+nmap <leader>ff :Telescope find_files<CR>
 "configuracion de tabs
 let g:indentLine_enabled = 1
 let g:indentLine_char = '▏'
@@ -147,11 +149,11 @@ set cmdheight=1
 "Segun la hora cambia el tema cuando se inicia vim.
 if strftime('%H') >= 7 && strftime('%H') < 19
    set background=dark
-   colorscheme molokayo "Tema durante el dia.
+   colorscheme tender "Tema durante el dia.
    let g:material_style = 'deep ocean'
 else
    set background=dark
-   colorscheme xcodedarkhc   "Tema durante la noche.
+   colorscheme challenger_deep "Tema durante la noche.
    "let g:material_style  'lighter'
 endif
 
