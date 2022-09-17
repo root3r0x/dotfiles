@@ -105,7 +105,12 @@ let g:indentLine_fileTypeExclude=["nerdtree"]
 
 set tabstop=3     "means how long each tabstop will be
 set shiftwidth=3  "governs sure that when you type >> or << be shifted according to the # of spaces you set.
+set backspace=indent "Este no me acuerdo para que era xd
+set softtabstop=3 "To fix that, you must fake a tab by adding an extra tab and backspace after 4 spaces, so vim will believe it's a tab, not space.
 set expandtab 		"will ensure that when you hit the tab key it will use the # of spaces you set
+
+
+
 "Goyo limelight setup
 let g:goyo_width= 140
 let g:limelight_default_coefficient = 0.8
@@ -120,9 +125,9 @@ autocmd! User GoyoLeave Limelight!
 " Lopem Ipsum Dolor Config 
 " :Loremimsum 100(ejemplo).
 
-lua <<EOF
-   require'lorem-nvim'.setup()
-EOF
+"lua <<EOF
+"   require 'lorem-nvim'.setup()
+"EOF
 
 
 "open nerdtree
@@ -177,3 +182,4 @@ let g:OmniSharp_server_stdio = 1
 
 "For Ruby Development
 let g:coc_global_extensions = ['coc-solargraph']
+
