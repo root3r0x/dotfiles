@@ -20,6 +20,7 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-rails'
 Plug 'marko-cerovac/material.nvim'
+Plug 'EdenEast/nightfox.nvim' " Vim-Plug
 
 "Para presentaciones:
 " :PresentingStart

@@ -151,7 +151,7 @@ if strftime('%H') >= 7 && strftime('%H') < 19
    let g:material_style = 'deep ocean'
 else
    set background=dark
-   colorscheme challenger_deep "Tema durante la noche.
+   colorscheme carbonfox "Tema durante la noche.
    "let g:material_style  'lighter'
 endif
 
