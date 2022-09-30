@@ -163,7 +163,7 @@ else
 endif
 
 "Close tags automatically
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.js'
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.js, *.haml, *.erb'
 
 " TextYank
 let b:highlightedyank_highlight_duration =1
