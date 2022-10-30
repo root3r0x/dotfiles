@@ -36,6 +36,8 @@ set backspace=2
 set guioptions-=T
 set guioptions-=L
 set numberwidth=1
+set ignorecase " Las busquedas ingoran el casesesitive
+set smartcase  " a menos que contengan una letra mayuscula.  
 
 "Config cursores horizontal-vertical
 set cursorline
@@ -51,6 +53,9 @@ imap <C-c> <Esc>l
 "Moves Blocks of code in visual mode or V-Line xnoremap K :move '<-2<CR>gv-gv xnoremap J :move '>+1<CR>gv-gv 
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv 
+"Visual Block-mode with q letter.
+nnoremap q <c-v>
+
 " Better indenting
 vnoremap < <gv
 vnoremap > >gv
@@ -115,17 +120,9 @@ map <leader>ll :Limelight!!<CR>
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
-" Lopem Ipsum Dolor Config 
-" :Loremimsum 100(ejemplo).
-
-"lua <<EOF
-"   require 'lorem-nvim'.setup()
-"EOF
-
-
 "open nerdtree
 nmap <Leader>e :NERDTree<CR>
-let NERDTreeQuitOnOpen=1 "Cerrar nerdtree cuando se abre un archivo.
+let NERDTreeQuitOnOpen=0 "1 Cerrar nerdtree cuando se abre un archivo.
 
 "open cocExplorer 
 "Search for two chars with easymotion

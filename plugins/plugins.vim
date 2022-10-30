@@ -14,7 +14,6 @@ Plug 'https://github.com/kyoz/purify'
 Plug 'dracula/vim', { 'as': 'dracula'  }
 Plug 'ayu-theme/ayu-vim'
 Plug 'machakann/vim-highlightedyank'
-"Plug 'nightsense/cosmic_latte'
 Plug 'arzg/vim-colors-xcode'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'ap/vim-css-color'
