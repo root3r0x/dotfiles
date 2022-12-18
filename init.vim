@@ -182,15 +182,18 @@ let g:coc_global_extensions = ['coc-solargraph']
 "set softtabstop=3 "To fix that, you must fake a tab by adding an extra tab and backspace after 3 spaces
 " so vim will believe it's a tab, not space.
 
-"set expandtab 		"will ensure that when you hit the tab key it will use the # of spaces you set
+set expandtab 		"will ensure that when you hit the tab key it will use the # of spaces you set
 
 " vim: tabstop=4 shiftwidth=4 softtabstop=4 smarttab shiftround noexpandtab noet list listchars=tab\:+.,space\:-
 
 function! SpecialTab() abort
-    if (col('.') == 1) || (matchstr(getline('.'), '\%'.(col('.') - 1).'c.') =~ '\t')
-        return "\<Tab>"
-    else
-        return repeat("\<Space>", (&tabstop - (virtcol('.') % &tabstop) + 1)) . "a\<tab>\<backspace>\<backspace>"
-    endif
+
+  if (col('.') == 1) || (matchstr(getline('.'), '\%'.(col('.') - 1).'c.') =~ '\t')
+    return "\<Tab>"
+  else
+    return repeat("\<Space>", (&tabstop - (virtcol('.') % &tabstop) + 1)) . "a\<tab>\<backspace>\<backspace>"
+  endif
 endfunction
 inoremap <expr> <Tab> SpecialTab()
+
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"

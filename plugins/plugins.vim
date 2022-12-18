@@ -34,6 +34,8 @@ Plug 'gyim/vim-boxdraw'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'   }
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'
+" live-server
+Plug 'manzeloth/live-server'
 
 Plug 'derektata/lorem.nvim'
 Plug 'vim-scripts/loremipsum'
