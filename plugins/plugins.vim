@@ -1,17 +1,11 @@
 "Plugins
 call plug#begin('~/.vim/plugged')
 " Themes
-Plug 'jsit/toast.vim'
 Plug 'bignimbus/pop-punk.vim'
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
-Plug 'sheerun/vim-polyglot'
-Plug 'joshdick/onedark.vim'
-Plug 'safv12/andromeda.vim'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'roosta/srcery'
-Plug 'https://github.com/kyoz/purify'
-Plug 'dracula/vim', { 'as': 'dracula'  }
 Plug 'ayu-theme/ayu-vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'arzg/vim-colors-xcode'
@@ -28,18 +22,15 @@ Plug 'EdenEast/nightfox.nvim' " Vim-Plug
 "  p    previous slide
 "  q    quit
 Plug 'sotte/presenting.vim'
+Plug 'jsit/toast.vim'
+
 
 Plug 'gyim/vim-boxdraw'
-
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'   }
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'
 " live-server
 Plug 'manzeloth/live-server'
-
-Plug 'derektata/lorem.nvim'
-Plug 'vim-scripts/loremipsum'
-"Plug 'https://github.com/root3r0x/vim-epub'
 
 "There are 5 different styles available:
 "    darker
@@ -65,8 +56,8 @@ Plug 'vim-airline/vim-airline-themes'
 " Stable version of coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'OmniSharp/omnisharp-vim'
-"Close pairs () [] {} ''
-Plug 'jiangmiao/auto-pairs'
+Plug 'sheerun/vim-polyglot'
+Plug 'jiangmiao/auto-pairs' "Close pairs () [] {} ''
 Plug 'alvan/vim-closetag'
 
 "PlantUml

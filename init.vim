@@ -70,7 +70,6 @@ inoremap <s-down> <esc>:m+<cr>
 source ~/AppData/Local/nvim/plugins/plugins.vim
 source ~/AppData/Local/nvim/plugins/plug-config.vim
 source ~/AppData/Local/nvim/Plugins/md_preview-config.vim
-source ~/AppData/Local/nvim/themes/onedark.vim
 "------------------- Languaje Spell config----------------------------
 ""--> URL Files= http://ftp.vim.org/vim/runtime/spell/ 
 "
@@ -151,6 +150,7 @@ else
    colorscheme carbonfox "Tema durante la noche.
    "let g:material_style  'lighter'
 endif
+highlight Normal ctermbg=NONE guibg=NONE
 
 "Tema de la barra.
 if strftime('%H') >= 7 && strftime('%H') < 19
