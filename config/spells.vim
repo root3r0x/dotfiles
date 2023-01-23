@@ -18,13 +18,13 @@ endfunction
 
 function! s:goyo_leave()
     " Habilitar la transparencia
-    highlight Normal ctermbg=NONE guibg=NONE
 endfunction
 
     "Goyo limelight setup
 augroup goyoLimeligth
     let g:goyo_width= 140
     let g:limelight_default_coefficient = 0.8
+    let g:limelight_conceal_ctermfg = 'gray'
 
     "Goyo Plugin for focus when write.
     autocmd! User GoyoEnter Limelight
@@ -35,8 +35,9 @@ augroup END
 :highlight SpellBad ctermfg=009 ctermbg=011 guifg=#ff0000 guibg=#ffff00
 
 augroup markdownspell
-        autocmd!
-        autocmd FileType markdown setlocal spell spelllang=es
-        autocmd Filetype setlocal spellfile=~/AppData/Local/nvim/spell/dic/dict_es.add
-        autocmd BufRead, BufNewFile *.md setlocal spell spelllang=es
+    autocmd!
+    autocmd FileType markdown setlocal spell spelllang=es
+    autocmd Filetype setlocal spellfile=~/AppData/Local/nvim/spell/dic/dict_es.add
+    autocmd BufRead, BufNewFile *.md setlocal spell spelllang=es
 augroup END
+
