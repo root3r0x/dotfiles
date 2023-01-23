@@ -31,18 +31,31 @@ opt.guioptions = T			-- no me acuerdo
 opt.guioptions = L			-- no me acuerdo
 opt.numberwidth =1			-- no me acuerdo
 
-opt.ignorecase = true 		--Las busquedas ingoran el casesesitive
-opt.smartcase= true  		-- a menos que contengan una letra mayuscula.  
+opt.ignorecase = true 		-- las busquedas ingoran el casesesitive
+opt.smartcase  = true  		-- a menos que contengan una letra mayuscula.  
 
-opt.cursorline = true		-- mostrar cursor horizontal
-opt.cursorcolumn = true		-- mostrar cursor vertical
+opt.cursorline 	= true	-- mostrar cursor horizontal
+opt.cursorcolumn 	= true	-- mostrar cursor vertical
 
 -- configuración de entornos
--- por ejemplo para markdown
+
+-- MARKDOWN
+-- 
+-- URL Files= http://ftp.vim.org/vim/runtime/spell/ 
+--
+-- ]s  Siguiente falta ortográfica
+-- [s  Anterior falta ortográfica
+-- z=  Mostrar sugerencias para una palabra incorrecta.
+-- zg  Añadir una palabra al diccionario.
+-- zug Deshacer la adición de una palabra al diccionario.
+-- zw  Eliminar una palabra del diccionario.
 exec ([[
 	augroup markdownspell
 		autocmd!
 		autocmd FileType markdown setlocal spell spelllang=es
+		autocmd FileType markdown setlocal spellfile= '~\AppData\Local\nvim\spell\dic\dict_es.add'
 		autocmd BufRead, BufNewFile *.md setlocal spell spelllang=es
 	augroup END
 ]], false)
+
+-- otro entorno.

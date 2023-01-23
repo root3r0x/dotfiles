@@ -133,30 +133,27 @@ nnoremap <silent> <TAB> :bnext<CR>
 nnoremap <silent> <S-TAB> :bprevious<CR>
 "cerrar buffer
 nmap <leader>bd :bdelete<CR>
-"--gruvbox config--
-"let g:gruvbox_contrast_dark = "medium"
 
 set cmdheight=1
-"let g:tokyonight_style = 'night' " available: night, storm
-"let g:tokyonight_enable_italic = 0
 
 "Segun la hora cambia el tema cuando se inicia vim.
 if strftime('%H') >= 7 && strftime('%H') < 19
    set background=dark
    colorscheme tender "Tema durante el dia.
-   let g:material_style = 'deep ocean'
+   let g:airline_theme    = 'hybrid'
+   let g:material_style   = 'hybrid'
 else
    set background=dark
    colorscheme carbonfox "Tema durante la noche.
    "let g:material_style  'lighter'
+   let g:airline_theme='ayu_dark'
 endif
 highlight Normal ctermbg=NONE guibg=NONE
 
 "Tema de la barra.
 if strftime('%H') >= 7 && strftime('%H') < 19
-   let g:airline_theme="hybrid"
+   
 else
-   let g:airline_theme='ayu_dark'
 endif
 
 "Close tags automatically
@@ -173,27 +170,15 @@ let g:OmniSharp_server_stdio = 1
 "For Ruby Development
 let g:coc_global_extensions = ['coc-solargraph']
 
-
-"set tabstop=3     "means how long each tabstop will be
-"set shiftwidth=3  "governs sure that when you type >> or << be shifted according to the # of spaces you set.
-
-"set backspace=indent "Este no me acuerdo para que era xd
-
-"set softtabstop=3 "To fix that, you must fake a tab by adding an extra tab and backspace after 3 spaces
-" so vim will believe it's a tab, not space.
-
 set expandtab 		"will ensure that when you hit the tab key it will use the # of spaces you set
 
-" vim: tabstop=4 shiftwidth=4 softtabstop=4 smarttab shiftround noexpandtab noet list listchars=tab\:+.,space\:-
-
 function! SpecialTab() abort
-
   if (col('.') == 1) || (matchstr(getline('.'), '\%'.(col('.') - 1).'c.') =~ '\t')
     return "\<Tab>"
   else
     return repeat("\<Space>", (&tabstop - (virtcol('.') % &tabstop) + 1)) . "a\<tab>\<backspace>\<backspace>"
   endif
 endfunction
-inoremap <expr> <Tab> SpecialTab()
 
+inoremap <expr> <Tab> SpecialTab()
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"

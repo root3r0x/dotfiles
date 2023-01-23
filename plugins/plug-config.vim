@@ -33,8 +33,6 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
-" Switch to your current theme
-let g:airline_theme = 'base16_google'
 
 " Always show tabs
 set showtabline=2
