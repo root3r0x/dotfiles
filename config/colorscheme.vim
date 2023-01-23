@@ -14,3 +14,5 @@ else
    let g:airline_theme='ayu_dark'
 endif
 
+" habilitar la transparencia 
+" highlight Normal ctermbg=NONE guibg=NONE
