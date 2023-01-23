@@ -10,7 +10,6 @@ map <leader>ll  :Limelight!!<CR>
 
 nnoremap <silent> <TAB> :bnext<CR> 						  " moverse al buffer siguiente (tab)
 nnoremap <silent> <S-TAB> :bprevious<CR> 				" moverse al buffer  anterior (shift+tab)
-nmap <leader>bd :bdelete<CR>							      " cerrar buffer
 
 "Moves Blocks of code in visual mode or V-Line xnoremap K :move '<-2<CR>gv-gv xnoremap J :move '>+1<CR>gv-gv 
 xnoremap K :move '<-2<CR>gv-gv
@@ -24,8 +23,6 @@ nnoremap <s-down> :m+<cr>
 inoremap <s-up> <esc>:m-2<cr>
 inoremap <s-down> <esc>:m+<cr>
 
-" Ctrl-z modo normal -> accion contraria Ctr + r
-nnoremap <C-z> u  
 
 "--------------------------------Plugins Config-----------------------
 " <Ctrl - f > <Ctrl - b > Scroll popupbuffer en la documentacion
@@ -34,9 +31,17 @@ nnoremap <C-z> u
 nmap <leader>w :w <CR>
 
 "cerrar ventana
-nmap <C-w> :q <CR>
+nmap <C-w> :bdelete <CR>
+
+" cerrar editor sin guardar con Alt+w
+nmap <A-w> :q! <ENTER> 
 nmap <leader>q :q <CR>
-nmap <leader>so :so%<CR>
+
+nmap <F5> :MarkdownPreview <ENTER>
+nmap <F6> :MarkdownPreviewStop <ENTER>
+
+" Ctrl-z modo normal -> accion contraria Ctr + r
+nnoremap <C-z> u  
 
 "search commands 
 nmap <leader>gs  :CocSearch
