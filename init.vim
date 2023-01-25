@@ -10,7 +10,6 @@ source ~/AppData/Local/nvim/plugins/plug-config.vim
 nmap <Leader>e :NERDTree<CR>
 let NERDTreeQuitOnOpen=0 "1 Cerrar nerdtree cuando se abre un archivo.
 
-
 "Close tags automatically
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.js, *.haml, *.erb'
 

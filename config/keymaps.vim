@@ -1,5 +1,6 @@
-"Requerir los plugins 
+"Requerimos los archivos de configuracion.
 source ~/AppData/Local/nvim/plugins/plugins.vim
+source ~/AppData/Local/nvim/config/terminal.vim
 
 "Keymaps
 let mapleader = " "		" tecla lider.
@@ -34,7 +35,7 @@ nmap <leader>w :w <CR>
 nmap <C-w> :bdelete <CR>
 
 " cerrar editor sin guardar con Alt+w
-nmap <A-w> :q! <ENTER> 
+nmap <A-w> :qa! <ENTER> 
 nmap <leader>q :q <CR>
 
 nmap <F5> :MarkdownPreview <ENTER>
@@ -52,3 +53,6 @@ nmap <leader>ff :Telescope find_files<CR>
 "open cocExplorer 
 "Search for two chars with easymotion
 nmap <Leader>s <Plug>(easymotion-s2)
+
+"abrir la terminal
+nnoremap <leader>t :call OpenTerminal()<CR>
