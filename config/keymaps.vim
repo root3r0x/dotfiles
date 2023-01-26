@@ -34,12 +34,16 @@ nmap <leader>w :w <CR>
 "cerrar ventana
 nmap <C-w> :bdelete <CR>
 
-" cerrar editor sin guardar con Alt+w
+" cerrar editor sin guardar con Alt+w|
 nmap <A-w> :qa! <ENTER> 
 nmap <leader>q :q <CR>
 
 nmap <F5> :MarkdownPreview <ENTER>
 nmap <F6> :MarkdownPreviewStop <ENTER>
+
+" corrección ortográfica
+"nmap <leader>z z=
+nmap <ENTER> z=
 
 " Ctrl-z modo normal -> accion contraria Ctr + r
 nnoremap <C-z> u  

@@ -10,6 +10,13 @@ source ~/AppData/Local/nvim/Plugins/plugins.vim
 " zg  Añadir una palabra al diccionario.
 " zug Deshacer la adición de una palabra al diccionario.
 " zw  Eliminar una palabra del diccionario.
+" corrección ortográfica
+nmap <ENTER> z=
+nmap <C-n> ]s
+nmap <C-b> [s
+nmap <leader>a zg
+nmap <C-d> zug
+nmap <leader>d zw
 
 " Goyo setup 
 function! s:goyo_enter()
