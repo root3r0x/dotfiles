@@ -27,7 +27,7 @@ inoremap <s-down> <esc>:m+<cr>
 
 "--------------------------------Plugins Config-----------------------
 " <Ctrl - f > <Ctrl - b > Scroll popupbuffer en la documentacion
-
+   
 "save file
 nmap <leader>w :w <CR>
 
@@ -41,9 +41,6 @@ nmap <leader>q :q <CR>
 nmap <F5> :MarkdownPreview <ENTER>
 nmap <F6> :MarkdownPreviewStop <ENTER>
 
-" corrección ortográfica
-"nmap <leader>z z=
-nmap <ENTER> z=
 
 " Ctrl-z modo normal -> accion contraria Ctr + r
 nnoremap <C-z> u  
