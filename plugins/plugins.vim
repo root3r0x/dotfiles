@@ -12,6 +12,7 @@ Plug 'arzg/vim-colors-xcode'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby' " Plugin de Ruby
 Plug 'marko-cerovac/material.nvim'
 Plug 'EdenEast/nightfox.nvim' " Vim-Plug
 
@@ -55,7 +56,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Stable version of coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'OmniSharp/omnisharp-vim'
+Plug 'neovim/nvim-lspconfig'
+
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs' "Close pairs () [] {} ''
 Plug 'alvan/vim-closetag'

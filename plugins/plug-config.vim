@@ -18,7 +18,7 @@ let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline#extensions#tabline#right_sep = ''
 let g:airline#extensions#tabline#right_alt_sep = ''
 let g:ariline_powerline_fonts = 1
-let g:ariline_theme='base16_google'
+"let g:ariline_theme='base16_google'
 
   if !exists('g:airline_symbols')
     let g:airline_symbols = {}

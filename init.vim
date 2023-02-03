@@ -1,13 +1,13 @@
 source ~/AppData/Local/nvim/config/settings.vim
 source ~/AppData/Local/nvim/config/keymaps.vim
-source ~/AppData/Local/nvim/config/colorscheme.vim
 
-source ~/AppData/Local/nvim/config/spells.vim
-source ~/AppData/Local/nvim/plugins/plugins.vim
 source ~/AppData/Local/nvim/plugins/plug-config.vim
+source ~/AppData/Local/nvim/plugins/plugins.vim
+source ~/AppData/Local/nvim/config/colorscheme.vim
+source ~/AppData/Local/nvim/config/spells.vim
 
 "open nerdtree
-nmap <Leader>e :NERDTree<CR>
+nmap <Leader>e :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=0 "1 Cerrar nerdtree cuando se abre un archivo.
 
 "Close tags automatically
@@ -20,6 +20,13 @@ highlight HighlightedyankRegion cterm=reverse gui=reverse
 "For Ruby Development
 let g:coc_global_extensions = ['coc-solargraph']
 
+" For Typescript Development
+"  requerimos lua
+
+lua << EOF
+--require 'lspconfig'.tsserver.setup{}
+  require 'lspconfig'.tsserver.setup{} 
+EOF
 
 function! SpecialTab() abort
   if (col('.') == 1) || (matchstr(getline('.'), '\%'.(col('.') - 1).'c.') =~ '\t')
