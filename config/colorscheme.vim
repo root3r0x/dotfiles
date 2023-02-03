@@ -9,9 +9,8 @@ if strftime('%H') >= 7 && strftime('%H') < 19
    let g:material_style   = 'hybrid'
 else
    set background=dark
-   colorscheme carbonfox "Tema durante la noche.
-   "let g:material_style  'lighter'
-   let g:airline_theme='ayu_dark'
+   colorscheme xcodedarkhc "Tema durante la noche.
+   let g:airline_theme = 'abstract'
 endif
 
 " habilitar la transparencia 
