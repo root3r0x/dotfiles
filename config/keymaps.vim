@@ -33,8 +33,9 @@ nmap <leader>w :w <CR>
 
 "cerrar ventana
 nmap <C-w> :bdelete <CR>
-
-" cerrar editor sin guardar con Alt+w|
+"buscar en los buffers abiertos
+nmap <C-p> :CtrlPBuffer <ENTER>
+"cerrar editor sin guardar con Alt+w|
 nmap <A-w> :qa! <ENTER> 
 nmap <leader>q :q <CR>
 
