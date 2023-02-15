@@ -15,12 +15,17 @@ nnoremap <silent> <S-TAB> :bprevious<CR> 				" moverse al buffer  anterior (shif
 "Moves Blocks of code in visual mode or V-Line xnoremap K :move '<-2<CR>gv-gv xnoremap J :move '>+1<CR>gv-gv 
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv 
+
+"Mover lineas con shit + j o k
+nnoremap <S-k> :m-2<cr>
+nnoremap <S-j> :m+<cr>
+
+"nnoremap <s-up> :m-2<cr>
+"nnoremap <s-down> :m+<cr>
+
 "Visual Block-mode with q letter.
 nnoremap q <c-v>
 
-"Mover lineas con shit
-nnoremap <s-up> :m-2<cr>
-nnoremap <s-down> :m+<cr>
 inoremap <s-up> <esc>:m-2<cr>
 inoremap <s-down> <esc>:m+<cr>
 
