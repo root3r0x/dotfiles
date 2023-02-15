@@ -11,6 +11,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'arzg/vim-colors-xcode'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'ap/vim-css-color'
+Plug 'tpope/vim-haml'
 Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby' " Plugin de Ruby
 Plug 'marko-cerovac/material.nvim'
