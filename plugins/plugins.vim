@@ -16,6 +16,7 @@ Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby' " Plugin de Ruby
 Plug 'marko-cerovac/material.nvim'
 Plug 'EdenEast/nightfox.nvim' " Vim-Plug
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 "Para presentaciones:
 " :PresentingStart
