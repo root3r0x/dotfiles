@@ -16,7 +16,13 @@ Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby' " Plugin de Ruby
 Plug 'marko-cerovac/material.nvim'
 Plug 'EdenEast/nightfox.nvim' " Vim-Plug
+Plug 'almo7aya/neogruvbox.nvim', { 'branch': 'master' }
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'hiroakis/cyberspace.vim'
+Plug 'Zabanaa/neuromancer.vim'
+Plug 'liuchengxu/space-vim-dark'
+Plug 'nanotech/jellybeans.vim'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 "Para presentaciones:
 " :PresentingStart
@@ -63,13 +69,14 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs' "Close pairs () [] {} ''
 Plug 'alvan/vim-closetag'
+"auto close tags for ruby.
+Plug 'tpope/vim-endwise' 
 
 "PlantUml
 Plug 'scrooloose/vim-slumlord'
 Plug 'aklt/plantuml-syntax'
 
 "Plug 'p00f/nvim-ts-rainbow'
-"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
 "FZF
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -93,5 +100,6 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 "Plug 'glepnir/dashboard-nvim'
+
 "_____________________________
 call plug#end()

@@ -4,7 +4,7 @@ source ~/AppData/Local/nvim/plugins/plugins.vim
 "Segun la hora cambia el tema cuando se inicia vim.
 if strftime('%H') >= 7 && strftime('%H') < 19
    set background=dark
-   colorscheme  'onehalf' "Tema durante el dia.
+   colorscheme  onehalfdark "Tema durante el dia.
    let g:airline_theme    = 'hybrid'
    let g:material_style   = 'hybrid'
 else
